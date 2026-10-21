@@ -17,7 +17,7 @@ VERSIONS = {
     "v1": {"prompt": "v1.md", "compute_warranty": False, "check_sender": False,
            "fence_email": False, "filter_injection": False, "guardrail": False},
     "v2": {"prompt": "v2.md", "compute_warranty": True, "check_sender": True,
-           "fence_email": True, "filter_injection": True, "guardrail": True},
+           "fence_email": True, "filter_injection": False, "guardrail": True},
 }
 ALWAYS_HUMAN = {"complaint", "cancel_refund"}
 Category = Literal["order_status", "warranty", "technical", "service_booking",
