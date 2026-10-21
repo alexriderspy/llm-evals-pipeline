@@ -1,0 +1,12 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.head_to_head v1 v2
+v1-20261021-095641 vs v2-20261021-100752: 56 emails, each judged twice, A and B swapped
+
+  v2 wins        12
+  v1 wins        22
+  tie              0
+  inconsistent    22   (the verdict flipped with the order)
+
+v2 wins 12/34 = 35% of the emails where the judge was consistent
+
+v1 wins where v1 failed our checks and v2 passed: 11
+  h05 h09 h10 h20 h23 h24 s03 s15 s19 s20 s26

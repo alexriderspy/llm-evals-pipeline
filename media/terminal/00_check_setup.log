@@ -1,0 +1,5 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m scripts.check_setup
+model    qwen2.5:7b at http://localhost:11434/v1
+answer   {"status": "ready"}
+tokens   39 in, 7 out
+latency  0.5 s

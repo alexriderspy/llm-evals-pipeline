@@ -21,12 +21,11 @@ def main() -> None:
     s = summary(rows)
     print(f"gate for {run_id} ({len(rows)} cases)")
 
-    p95, max_p95 = s["p95_ms"] / 1000, bar["max_p95_ms"] / 1000
-    results = [
-        (f"pass rate {s['pass_rate']:.1%} >= {bar['min_pass_rate']:.0%}",
-         s["pass_rate"] >= bar["min_pass_rate"]),
-        (f"p95 latency {p95:.1f} s <= {max_p95:.0f} s", p95 <= max_p95),
-    ]
+    results = [(f"pass rate {s['pass_rate']:.1%} >= {bar['min_pass_rate']:.0%}",
+                s["pass_rate"] >= bar["min_pass_rate"])]
+    if bar["max_p95_ms"] is not None:  # only gate latency on hardware like production's
+        p95, max_p95 = s["p95_ms"] / 1000, bar["max_p95_ms"] / 1000
+        results.append((f"p95 latency {p95:.1f} s <= {max_p95:.0f} s", p95 <= max_p95))
     if bar["min_judge_pass_rate"] is not None and s["judge_pass_rate"] is not None:
         results.append((f"judge pass rate {s['judge_pass_rate']:.1%} >= "
                         f"{bar['min_judge_pass_rate']:.0%}",

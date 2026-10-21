@@ -2,4 +2,16 @@ sreemanti@MacBook-Pro llm-evals-pipeline % python -m pytest -v --no-header
 ============================= test session starts ==============================
 collecting ... collected 11 items
 
-tests/test_checks.py::test_dates_match_in_any_format PASSED
+tests/test_checks.py::test_dates_match_in_any_format PASSED              [  9%]
+tests/test_checks.py::test_phrases_match_whole_words PASSED              [ 18%]
+tests/test_checks.py::test_invented_numbers_are_caught PASSED            [ 27%]
+tests/test_checks.py::test_a_good_reply_passes_every_check PASSED        [ 36%]
+tests/test_checks.py::test_a_bad_reply_fails_the_right_checks PASSED     [ 45%]
+tests/test_checks.py::test_unparseable_output_fails_schema PASSED        [ 54%]
+tests/test_guards.py::test_injection_lines_are_removed PASSED            [ 63%]
+tests/test_guards.py::test_normal_emails_are_untouched PASSED            [ 72%]
+tests/test_stats.py::test_identical_runs_have_an_interval_around_zero PASSED [ 81%]
+tests/test_stats.py::test_a_clearly_better_run_excludes_zero PASSED      [ 90%]
+tests/test_stats.py::test_kappa PASSED                                   [100%]
+
+============================== 11 passed in 0.63s ==============================
