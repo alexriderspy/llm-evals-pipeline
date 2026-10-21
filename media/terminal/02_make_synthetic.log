@@ -2,18 +2,18 @@ sreemanti@MacBook-Pro llm-evals-pipeline % python -m data.make_synthetic
 generated 35, kept 30, dropped 5 {'near duplicate': 5}
 
 [s01] order_status, where_is_it, long
-Dear Vardhan Pumps Team, I hope this message finds you well. My name is Kavita, and I have been working with Vardhan Pumps for a couple of years now. I must admit, the experience has been nothing short of extraordinary, and your team's dedication to quality and customer satisfaction truly stands out
+Dear Vardhan Pumps Team, I hope this message finds you well. My name is Kavita, and I have been
+working with Vardhan Pumps for a couple of years now. I must admit, the experience has been nothing
+short of extraordinary, and your team's dedication to quality and customer satisfaction truly stands
+out
 
 [s02] order_status, when_dispatch, angry
-Dear Vardhan Pumps Team,
-
-I recently paid for my ORDER (ORD-50403) via online payment. It’s been a week since the payment, and I haven’t received any updates on the dispatch of the VP-100 centrifugal pump. This is unacceptable, and I demand a swift response. WHEN WILL THIS ORDER BE SHIPPED?????!
-
-Yo
+Dear Vardhan Pumps Team,  I recently paid for my ORDER (ORD-50403) via online payment. It’s been a
+week since the payment, and I haven’t received any updates on the dispatch of the VP-100 centrifugal
+pump. This is unacceptable, and I demand a swift response. WHEN WILL THIS ORDER BE SHIPPED?????!  Yo
 
 [s03] warranty, warranty_in, formal
-Dear Sir/Madam,
-
-I hope this email finds you well. I am writing to inquire about the status of my order (ORD-50422), which includes a VP-100 centrifugal pump. Unfortunately, I have noticed that the pump does not start in the morning, and this has been causing some disruptions in our operations.
-
-I w
+Dear Sir/Madam,  I hope this email finds you well. I am writing to inquire about the status of my
+order (ORD-50422), which includes a VP-100 centrifugal pump. Unfortunately, I have noticed that the
+pump does not start in the morning, and this has been causing some disruptions in our operations.  I
+w

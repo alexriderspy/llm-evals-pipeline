@@ -3,6 +3,7 @@
 import difflib
 import json
 import random
+import textwrap
 from datetime import date
 from pathlib import Path
 from typing import Callable, NamedTuple
@@ -112,7 +113,7 @@ def main(want: int = 30, max_tries: int = 45) -> None:
     Path("data/synthetic.jsonl").write_text("".join(lines))
     print(f"generated {tries}, kept {len(kept)}, dropped {sum(dropped.values())} {dropped}")
     for k in kept[:3]:
-        print(f"\n[{k['id']}] {', '.join(k['tags'])}\n{k['email']['body'][:300]}")
+        print(f"\n[{k['id']}] {', '.join(k['tags'])}\n{textwrap.fill(k['email']['body'][:300], 100)}")
 
 
 if __name__ == "__main__":

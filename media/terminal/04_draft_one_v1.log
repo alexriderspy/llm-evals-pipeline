@@ -2,7 +2,8 @@ sreemanti@MacBook-Pro llm-evals-pipeline % python -m drafter --case h12 --versio
 From: rohit.gaikwad@rediffmail.com
 Subject: VP-100 capacitor failed
 
-My VP-100 from order 50430 is not starting, I think the capacitor has failed. I bought it in September 2024. It's under warranty right?
+My VP-100 from order 50430 is not starting, I think the capacitor has failed. I bought it in
+September 2024. It's under warranty right?
 
 --- Order record ---
 {
@@ -16,10 +17,12 @@ My VP-100 from order 50430 is not starting, I think the capacitor has failed. I 
  "delivered_on": "2024-09-10",
  "serial": "VP100-86569",
  "installed_on": "2024-09-18"
-} 
+}
 
 category: warranty   needs_human: False
 
-Hello Rohit, thank you for contacting us. Your VP-100 is under warranty as it was installed after September 2024. We will need the serial number VP100-86569 and some photos to process your claim. A technician will inspect it within 2 working days. Team Vardhan Pumps
+Hello Rohit, thank you for contacting us. Your VP-100 is under warranty as it was installed after
+September 2024. We will need the serial number VP100-86569 and some photos to process your claim. A
+technician will inspect it within 2 working days. Team Vardhan Pumps
 
 1162 tokens in, 93 out, 15.9 s (from cache)

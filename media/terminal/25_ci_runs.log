@@ -1,0 +1,4 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % gh run list --repo alexriderspy/llm-evals-pipeline --limit 3
+completed	failure	Remove the injection filter	evals	remove-injection-filter	pull_request	39546183507	13m15s	2026-10-21T04:49:59Z
+completed	success	CI: gate on latency only on production-like hardware; update actions …	evals	main	push	39546135424	20m26s	2026-10-21T04:49:27Z
+completed	failure	LLM evals pipeline for a support reply drafter: golden set, graders, …	evals	main	push	39545029232	11m4s	2026-10-21T04:37:10Z

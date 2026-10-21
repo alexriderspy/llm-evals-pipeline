@@ -1,0 +1,3 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % gh pr checks 1 --repo alexriderspy/llm-evals-pipeline
+evals	fail	12m51s	https://github.com/alexriderspy/llm-evals-pipeline/actions/runs/39546183507/job/119044871012	
+tests	pass	17s	https://github.com/alexriderspy/llm-evals-pipeline/actions/runs/39546183507/job/119044778151	
