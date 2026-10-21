@@ -1,0 +1,6 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.build_golden
+56 cases -> evals/golden.jsonl   (rejected in review: s06, s07, s12, s16)
+source:      {'handwritten': 30, 'synthetic': 26}
+category:    {'order_status': 18, 'complaint': 5, 'technical': 2, 'cancel_refund': 10, 'warranty': 15, 'service_booking': 1, 'other': 5}
+needs_human: {'False': 35, 'True': 20, 'None': 1}
+tags:        {'smoke': 12, 'long': 9, 'formal': 6, 'cancel': 6, 'angry': 5, 'warranty_in': 5, 'warranty_out': 5, 'hinglish': 4, 'out_of_warranty': 4, 'where_is_it': 4, 'when_dispatch': 4, 'polite': 4}

@@ -1,0 +1,39 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m scripts.show_case h12
+{
+ "id": "h12",
+ "source": "handwritten",
+ "tags": [
+  "warranty",
+  "out_of_warranty",
+  "smoke"
+ ],
+ "email": {
+  "sender": "rohit.gaikwad@rediffmail.com",
+  "subject": "VP-100 capacitor failed",
+  "body": "My VP-100 from order 50430 is not starting, I think the capacitor has failed. I bought it in September 2024. It's under warranty right?",
+  "received": "2026-10-21"
+ },
+ "expected": {
+  "category": [
+   "warranty",
+   "technical"
+  ],
+  "needs_human": false,
+  "must_include": [
+   [
+    "expired",
+    "ended",
+    "no longer",
+    "out of warranty",
+    "not under warranty",
+    "not covered",
+    "2026-09-18"
+   ],
+   [
+    "750"
+   ]
+  ],
+  "must_not_include": []
+ },
+ "reference": "Hi Rohit,\n\nYour VP-100 (ORD-50430) was installed on 18 September 2024, so its 24-month warranty ended on 18 September 2026. We can send a technician: an out-of-warranty visit in Pune costs Rs 750 plus parts, and the visit charge is waived if the repair costs more than Rs 3,000.\n\nTeam Vardhan Pumps"
+}

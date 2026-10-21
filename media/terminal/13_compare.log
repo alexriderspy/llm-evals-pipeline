@@ -1,0 +1,37 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.compare v1 v2
+v1-20261021-095641  vs  v2-20261021-095641   (56 cases)
+
+                     base     new       change   95% CI
+pass rate           51.8%   82.1%    +30.4 pts  [+17.9, +42.9]  *
+  schema           100.0%  100.0%     +0.0 pts  [+0.0, +0.0]
+  category          92.9%   98.2%     +5.4 pts  [-1.8, +12.5]
+  needs_human       82.1%   89.3%     +7.1 pts  [-5.4, +19.6]
+  facts             80.4%   94.6%    +14.3 pts  [+5.4, +23.2]  *
+  forbidden         91.1%  100.0%     +8.9 pts  [+1.8, +16.1]  *
+  grounded_numbers  96.4%  100.0%     +3.6 pts  [+0.0, +8.9]
+  english          100.0%  100.0%     +0.0 pts  [+0.0, +0.0]
+  signoff          100.0%  100.0%     +0.0 pts  [+0.0, +0.0]
+  length           100.0%  100.0%     +0.0 pts  [+0.0, +0.0]
+* = the interval doesn't include zero
+
+slice               n    base     new
+order_status       18     78%     89%
+warranty           15     27%     67%
+smoke              12     58%     92%
+cancel_refund      10     30%    100%
+long                9     56%     67%
+complaint           7     43%     71%
+formal              6     33%    100%
+cancel              6     50%    100%
+angry               5     40%     80%
+other               5     40%     60%
+warranty_in         5     60%    100%
+warranty_out        5      0%     40%
+hinglish            4     50%     50%
+out_of_warranty     4     25%     50%
+where_is_it         4    100%    100%
+when_dispatch       4     75%     75%
+polite              4     50%     75%
+
+fixed (18): h05 h09 h10 h12 h14 h18 h19 h20 h23 h24 s03 s10 s15 s18 s19 s20 s26 s27
+broke (1): h21

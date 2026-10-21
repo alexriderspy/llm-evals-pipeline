@@ -1,0 +1,5 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m pytest -v --no-header
+============================= test session starts ==============================
+collecting ... collected 11 items
+
+tests/test_checks.py::test_dates_match_in_any_format PASSED

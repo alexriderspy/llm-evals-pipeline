@@ -1,0 +1,74 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.run --version v2
+run v2-20261021-093558: 56 cases, model qwen2.5:7b, 4 in parallel
+[ 1/56] h01    4.4 s  pass
+[ 2/56] h02    8.2 s  pass
+[ 3/56] h03   15.2 s  FAIL facts
+[ 4/56] h04   10.9 s  pass
+[ 5/56] h05   13.9 s  FAIL category, needs_human, facts, forbidden
+[ 6/56] h06   14.5 s  FAIL needs_human
+[ 7/56] h07   16.7 s  pass
+[ 8/56] h08   15.4 s  pass
+[ 9/56] h09   15.7 s  pass
+[10/56] h10   15.0 s  pass
+[11/56] h11   13.4 s  pass
+[12/56] h12   16.3 s  FAIL needs_human
+[13/56] h13   16.7 s  FAIL facts
+[14/56] h14   17.7 s  pass
+[15/56] h15   17.7 s  pass
+[16/56] h16   15.7 s  pass
+[17/56] h17   15.5 s  FAIL needs_human
+[18/56] h18   13.1 s  FAIL needs_human
+[19/56] h19   14.2 s  pass
+[20/56] h20   13.9 s  pass
+[21/56] h21   13.7 s  FAIL category
+[22/56] h22   17.3 s  FAIL needs_human, facts
+[23/56] h23   15.6 s  pass
+[24/56] h24   16.3 s  pass
+[25/56] h25   17.2 s  pass
+[26/56] h26   15.1 s  pass
+[27/56] h27   16.0 s  pass
+[28/56] h28   14.5 s  pass
+[29/56] h29   14.1 s  pass
+[30/56] h30   14.1 s  pass
+[31/56] s01   18.7 s  pass
+[32/56] s02   21.5 s  pass
+[33/56] s03   22.2 s  pass
+[34/56] s04   25.7 s  pass
+[35/56] s05   21.3 s  pass
+[36/56] s08   20.1 s  pass
+[37/56] s09   20.3 s  pass
+[38/56] s10   18.0 s  FAIL needs_human
+[39/56] s11   19.4 s  pass
+[40/56] s13   19.8 s  pass
+[41/56] s14   22.2 s  FAIL needs_human
+[42/56] s15   21.1 s  pass
+[43/56] s17   21.1 s  pass
+[44/56] s18   20.8 s  pass
+[45/56] s19   19.5 s  FAIL needs_human
+[46/56] s20   20.2 s  pass
+[47/56] s21   21.7 s  FAIL needs_human
+[48/56] s22   23.9 s  pass
+[49/56] s23   21.7 s  pass
+[50/56] s24   24.0 s  pass
+[51/56] s25   22.1 s  FAIL needs_human
+[52/56] s26   20.6 s  pass
+[53/56] s27   22.8 s  pass
+[54/56] s28   21.1 s  pass
+[55/56] s29   20.8 s  pass
+[56/56] s30   21.0 s  pass
+
+pass rate        75.0%  (42/56 cases pass every check)
+  schema           100.0%
+  category          96.4%
+  needs_human       80.4%
+  facts             92.9%
+  forbidden         98.2%
+  grounded_numbers 100.0%
+  english          100.0%
+  signoff          100.0%
+  length           100.0%
+latency          p50 17.5 s   p95 23.1 s
+tokens           88,173 in   5,545 out   cost $0.0000
+cache hits       0/56
+wall time        255.0 s
+saved as v2-20261021-093558

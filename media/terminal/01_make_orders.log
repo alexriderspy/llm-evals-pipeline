@@ -1,0 +1,13 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python data/make_orders.py
+40 orders written to data/orders.json
+{'awaiting dispatch': 10, 'dispatched': 11, 'delivered': 19}
+{
+ "order_id": "ORD-50401",
+ "customer": "Sunita Pawar",
+ "city": "Pune",
+ "item": "Pressure switch",
+ "amount_rs": 1900,
+ "paid_on": "2026-10-18",
+ "status": "awaiting dispatch",
+ "expected_dispatch": "2026-10-21"
+}

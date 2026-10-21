@@ -1,0 +1,74 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.run --version v2
+run v2-20261021-095144: 56 cases, model qwen2.5:7b, 4 in parallel
+[ 1/56] h01   14.3 s  pass
+[ 2/56] h02    8.0 s  pass
+[ 3/56] h03   18.6 s  FAIL facts
+[ 4/56] h04   10.5 s  pass
+[ 5/56] h05   14.8 s  pass
+[ 6/56] h06   17.0 s  pass
+[ 7/56] h07   17.9 s  pass
+[ 8/56] h08   16.4 s  FAIL facts
+[ 9/56] h09   18.4 s  pass
+[10/56] h10   16.8 s  pass
+[11/56] h11   15.5 s  pass
+[12/56] h12   16.9 s  pass
+[13/56] h13   14.8 s  FAIL facts
+[14/56] h14   15.7 s  pass
+[15/56] h15   15.5 s  pass
+[16/56] h16   15.0 s  pass
+[17/56] h17   14.3 s  FAIL needs_human
+[18/56] h18   13.7 s  pass
+[19/56] h19   14.7 s  pass
+[20/56] h20   13.7 s  pass
+[21/56] h21   14.4 s  FAIL category
+[22/56] h22   16.2 s  FAIL facts
+[23/56] h23   14.7 s  pass
+[24/56] h24   15.3 s  pass
+[25/56] h25   15.8 s  pass
+[26/56] h26   15.0 s  pass
+[27/56] h27   16.3 s  pass
+[28/56] h28   15.1 s  pass
+[29/56] h29   14.9 s  pass
+[30/56] h30   14.3 s  pass
+[31/56] s01   18.4 s  pass
+[32/56] s02   21.0 s  FAIL needs_human
+[33/56] s03   22.8 s  pass
+[34/56] s04   25.5 s  FAIL needs_human
+[35/56] s05   21.2 s  pass
+[36/56] s08   20.8 s  pass
+[37/56] s09   20.6 s  pass
+[38/56] s10   21.0 s  pass
+[39/56] s11   21.0 s  pass
+[40/56] s13   21.7 s  pass
+[41/56] s14   25.3 s  FAIL needs_human
+[42/56] s15   21.9 s  pass
+[43/56] s17   23.7 s  pass
+[44/56] s18   23.4 s  pass
+[45/56] s19   20.2 s  pass
+[46/56] s20   21.8 s  pass
+[47/56] s21   22.9 s  FAIL needs_human
+[48/56] s22   24.7 s  pass
+[49/56] s23   23.7 s  pass
+[50/56] s24   27.8 s  pass
+[51/56] s25   26.0 s  FAIL needs_human
+[52/56] s26   23.6 s  pass
+[53/56] s27   25.1 s  pass
+[54/56] s28   21.1 s  pass
+[55/56] s29   21.6 s  pass
+[56/56] s30   22.9 s  pass
+
+pass rate        80.4%  (45/56 cases pass every check)
+  schema           100.0%
+  category          98.2%
+  needs_human       89.3%
+  facts             92.9%
+  forbidden        100.0%
+  grounded_numbers 100.0%
+  english          100.0%
+  signoff          100.0%
+  length           100.0%
+latency          p50 18.1 s   p95 25.3 s
+tokens           94,802 in   5,514 out   cost $0.0000
+cache hits       0/56
+wall time        269.2 s
+saved as v2-20261021-095144

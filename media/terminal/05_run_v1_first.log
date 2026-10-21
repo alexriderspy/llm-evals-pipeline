@@ -1,0 +1,78 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.run --version v1
+run v1-20261021-092253: 60 cases, model qwen2.5:7b, 4 in parallel
+[ 1/60] h01   15.3 s  FAIL facts
+[ 2/60] h02   10.4 s  FAIL signoff
+[ 3/60] h03   20.5 s  FAIL facts
+[ 4/60] h04    6.7 s  pass
+[ 5/60] h05   18.7 s  FAIL category, facts, forbidden
+[ 6/60] h06   20.4 s  FAIL needs_human
+[ 7/60] h07   20.1 s  pass
+[ 8/60] h08   19.1 s  pass
+[ 9/60] h09   18.9 s  FAIL needs_human
+[10/60] h10   18.4 s  FAIL needs_human, forbidden
+[11/60] h11   18.0 s  pass
+[12/60] h12   18.3 s  FAIL facts
+[13/60] h13   17.6 s  FAIL facts
+[14/60] h14   17.6 s  FAIL forbidden
+[15/60] h15   17.9 s  pass
+[16/60] h16   17.6 s  pass
+[17/60] h17   18.5 s  FAIL needs_human
+[18/60] h18   16.7 s  FAIL needs_human
+[19/60] h19   17.1 s  FAIL category, facts, signoff
+[20/60] h20   17.6 s  FAIL forbidden
+[21/60] h21   16.6 s  pass
+[22/60] h22   21.2 s  FAIL facts
+[23/60] h23   21.7 s  FAIL needs_human
+[24/60] h24   20.8 s  FAIL needs_human
+[25/60] h25   21.3 s  pass
+[26/60] h26   18.8 s  pass
+[27/60] h27   18.0 s  pass
+[28/60] h28   17.0 s  pass
+[29/60] h29   16.2 s  pass
+[30/60] h30   15.6 s  FAIL facts
+[31/60] s01   19.9 s  FAIL facts
+[32/60] s02   22.5 s  pass
+[33/60] s03   24.4 s  pass
+[34/60] s04   29.0 s  FAIL facts
+[35/60] s05   24.9 s  pass
+[36/60] s06   27.4 s  FAIL category
+[37/60] s07   28.6 s  FAIL facts
+[38/60] s08   24.1 s  pass
+[39/60] s09   25.6 s  FAIL facts
+[40/60] s10   22.8 s  FAIL facts
+[41/60] s11   21.8 s  FAIL needs_human, forbidden
+[42/60] s12   23.6 s  FAIL category
+[43/60] s13   23.1 s  pass
+[44/60] s14   24.5 s  FAIL facts
+[45/60] s15   25.1 s  FAIL needs_human
+[46/60] s16   25.3 s  FAIL category, needs_human
+[47/60] s17   26.3 s  pass
+[48/60] s18   24.9 s  pass
+[49/60] s19   25.3 s  FAIL facts, grounded_numbers
+[50/60] s20   24.6 s  FAIL needs_human
+[51/60] s21   25.2 s  FAIL needs_human
+[52/60] s22   27.4 s  pass
+[53/60] s23   25.4 s  pass
+[54/60] s24   29.0 s  pass
+[55/60] s25   27.1 s  FAIL facts
+[56/60] s26   25.5 s  FAIL needs_human, forbidden
+[57/60] s27   26.7 s  FAIL category
+[58/60] s28   23.5 s  pass
+[59/60] s29   23.1 s  pass
+[60/60] s30   24.6 s  FAIL needs_human
+
+pass rate        40.0%  (24/60 cases pass every check)
+  schema           100.0%
+  category          90.0%
+  needs_human       76.7%
+  facts             73.3%
+  forbidden         90.0%
+  grounded_numbers  98.3%
+  english          100.0%
+  signoff           96.7%
+  length           100.0%
+latency          p50 21.5 s   p95 27.5 s
+tokens           70,882 in   6,227 out   cost $0.0000
+cache hits       0/60
+wall time        330.7 s
+saved as v1-20261021-092253

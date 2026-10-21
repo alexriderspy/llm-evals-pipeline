@@ -1,0 +1,24 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.judge_agreement --rubric v3
+judge rubric v3, 30 hand-labelled replies
+
+               judge pass  judge fail
+human pass              8           7
+human fail              7           8
+
+agreement 16/30 = 53%   Cohen's kappa 0.07
+
+disagreements:
+  h01 (v1)  human fail, judge pass: The reply provides factual information from the order record and follows all the rules.
+  h04 (v1)  human pass, judge fail: The reply asks for the order number, which is not provided in the email, and does not make any factual claims 
+  h12 (v1)  human fail, judge pass: The reply adheres to the facts provided in the order record and the support handbook, without making any unsup
+  h20 (v1)  human fail, judge pass: The reply provides factual information from the order record and follows all the rules.
+  h25 (v1)  human pass, judge fail: The reply does not make any claims about refunds, cancellations, returns, replacements, or free items, and it 
+  h27 (v1)  human fail, judge pass: The reply provides factual information about the order status and expected delivery date, adhering to the supp
+  s10 (v1)  human fail, judge pass: The reply addresses the customer's concern, recommends a service visit, and informs about the free visit statu
+  h07 (v2)  human pass, judge fail: The reply breaks the rule by promising a free replacement, which is not supported by the handbook or the order
+  h16 (v2)  human pass, judge fail: The reply does not break any rules and provides accurate information based on the order record and the support
+  h29 (v2)  human pass, judge fail: The reply addresses the customer's concerns and promises to look into the matter, but does not make any factua
+  s02 (v2)  human pass, judge fail: The reply does not break any rules and only uses facts from the order record and the handbook.
+  s09 (v2)  human fail, judge pass: The reply adheres to the facts provided in the order record and the support handbook, without making any unsup
+  s14 (v2)  human fail, judge pass: The reply accurately addresses the customer's concerns without making any unsupported claims or breaking any r
+  s25 (v2)  human pass, judge fail: The reply breaks the rule by promising a free service visit, which is not supported by the handbook.

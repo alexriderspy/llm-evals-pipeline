@@ -1,0 +1,26 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.judge_agreement --rubric v2
+judge rubric v2, 30 hand-labelled replies
+
+               judge pass  judge fail
+human pass              9           6
+human fail             10           5
+
+agreement 14/30 = 47%   Cohen's kappa -0.07
+
+disagreements:
+  h01 (v1)  human fail, judge pass: The reply is grounded in the order record, correct in the dates and tracking number, follows the handbook's po
+  h03 (v1)  human fail, judge pass: The reply is grounded in the facts from the order record, correct in its warranty and order facts, follows the
+  h04 (v1)  human pass, judge fail: The reply is polite and clear, asks for the order number as needed, and signs off as 'Team Vardhan Pumps'. How
+  h12 (v1)  human fail, judge pass: The reply is grounded in the facts from the order record and handbook, is correct for the current date, follow
+  h20 (v1)  human fail, judge pass: The reply provides the correct tracking number and expected delivery date from the order record. It follows th
+  h27 (v1)  human fail, judge pass: The reply is grounded in the order record, correct in the dates and status, follows the handbook, and uses the
+  s23 (v1)  human fail, judge pass: The reply is grounded in the order record, correct in its facts, follows the handbook, and uses the correct to
+  h07 (v2)  human pass, judge fail: The reply does not address the customer's request for a free replacement, does not follow the handbook by not 
+  h13 (v2)  human fail, judge pass: The reply addresses the customer's query about warranty coverage, mentions the noise issue, and offers a servi
+  h17 (v2)  human fail, judge pass: The reply is polite and clear, addresses the customer by first name, and signs off as 'Team Vardhan Pumps'. It
+  h19 (v2)  human fail, judge pass: The reply is grounded in the facts from the order record, correct in its answers, follows the handbook's polic
+  h24 (v2)  human pass, judge fail: The reply does not address the warranty status, does not follow the handbook by not promising a return, and do
+  h28 (v2)  human pass, judge fail: The reply does not follow the handbook's instructions for when a person must handle the email, as it does not 
+  h29 (v2)  human pass, judge fail: The reply does not address the specific issues raised (lateness, rudeness, and not fixing the leak). It also d
+  s09 (v2)  human fail, judge pass: The reply correctly identifies the warranty period, mentions booking a service visit, and asks for order numbe
+  s25 (v2)  human pass, judge fail: The reply correctly identifies the pump model, order number, and current warranty status. It also provides the

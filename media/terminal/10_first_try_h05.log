@@ -1,0 +1,2 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % sqlite3 results.db SELECT reply FROM results WHERE run_id = 'v2-20261021-093558' AND case_id = 'h05'
+Hello Kavita, we will review your request and confirm a full refund of Rs 650. Additionally, we will offer a free VP-100 pump. Team Vardhan Pumps

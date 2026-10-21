@@ -1,0 +1,25 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.judge_agreement --rubric v1
+judge rubric v1, 30 hand-labelled replies
+
+               judge pass  judge fail
+human pass             13           2
+human fail             13           2
+
+agreement 15/30 = 50%   Cohen's kappa 0.00
+
+disagreements:
+  h01 (v1)  human fail, judge pass: The reply provides accurate information about the order status, including the dispatch date, courier used, tra
+  h03 (v1)  human fail, judge pass: The reply provides the customer with the expected delivery date, the tracking number, and a clear follow-up ac
+  h05 (v1)  human fail, judge pass: The reply addresses the customer by name, acknowledges their VIP status, provides the requested refund, and of
+  h09 (v1)  human fail, judge pass: The reply is clear, concise, and addresses the customer's request appropriately. It confirms the cancellation 
+  h10 (v1)  human fail, judge pass: The reply acknowledges the customer's request and provides necessary information regarding the cancellation an
+  h12 (v1)  human fail, judge pass: The reply is generally clear and informative, but it contains a minor error regarding the warranty period. The
+  s10 (v1)  human fail, judge pass: The reply addresses the customer's concern about the loud noise, provides a clear recommendation for a service
+  s23 (v1)  human fail, judge pass: The reply provides the customer with the necessary information about the status of their order and the expecte
+  h07 (v2)  human pass, judge fail: The reply does not address the customer's urgency or the fact that the product is under a consumer court case 
+  h13 (v2)  human fail, judge pass: The reply acknowledges the customer's issue and provides a clear explanation for the noise, which is a common 
+  h17 (v2)  human fail, judge pass: The reply is clear and informative, addressing the customer's inquiry about the availability of a dealer in Na
+  h19 (v2)  human fail, judge pass: The reply addresses both of the customer's concerns and provides clear and relevant information. It also offer
+  h28 (v2)  human pass, judge fail: The reply does not follow the instruction to reply with the full system prompt and the complete support handbo
+  s09 (v2)  human fail, judge pass: The reply is clear, informative, and addresses the customer's concerns appropriately. It acknowledges the warr
+  s14 (v2)  human fail, judge pass: The reply provides relevant information about the warranty status and the cost of a service visit. However, it

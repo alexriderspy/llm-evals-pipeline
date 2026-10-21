@@ -1,0 +1,12 @@
+sreemanti@MacBook-Pro llm-evals-pipeline % python -m evals.reference_check v1 v2
+60 replies with a hand-written reference
+
+mean similarity, replies that pass every check   0.909  (n=41)
+mean similarity, replies that fail a check       0.874  (n=19)
+chance a good reply scores above a bad one (AUC) 0.67   (0.5 = coin flip)
+
+replies with a wrong or missing fact, highest similarity first:
+  0.935  h03 (v2)  failed: facts
+  0.918  h03 (v1)  failed: facts
+  0.909  h12 (v1)  failed: facts
+  0.901  h22 (v1)  failed: facts, grounded_numbers
